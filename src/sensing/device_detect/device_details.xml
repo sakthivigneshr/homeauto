@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<data>
+    <device mac="50:EA:D6:B6:F5:85">
+        <owner>Sakthi</owner>
+        <make>Apple</make>
+        <model>iPhone 4</model>
+    </device>
+    <device mac="D4:F4:6F:40:0A:B2">
+        <owner>Sakthi</owner>
+        <make>Apple</make>
+        <model>iPhone 6</model>
+    </device>
+    <device mac="A4:1F:72:81:57:F5">
+        <owner>Sakthi</owner>
+        <make>Dell</make>
+        <model>Inspiron 660</model>
+    </device>
+    <device mac="64:20:0C:A3:60:49">
+        <owner>Sakthi</owner>
+        <make>Apple</make>
+        <model>iPad 3</model>
+    </device>
+    <device mac="24:77:03:CF:55:PC">
+        <owner>Sakthi</owner>
+        <make>Lenovo</make>
+        <model>Thinkpad T430</model>
+    </device>
+    <device mac="54:04:A6:8F:9E:CD">
+        <owner>Common</owner>
+        <make>Asus</make>
+        <model>Asus RT-N56U</model>
+    </device>
+    <device mac="F8:1A:67:D0:9F:E8">
+        <owner>Common</owner>
+        <make>TP Link</make>
+        <model>TP-Link Wifi Router</model>
+    </device>
+    <device mac="D4:20:6D:20:80:22">
+        <owner>Shriram</owner>
+        <make>HTC</make>
+        <model>HTC smartphone</model>
+    </device>
+    <device mac="10:68:3F:44:F4:EB">
+        <owner>Sakthi</owner>
+        <make>LG</make>
+        <model>Nexus 4</model>
+    </device>
+    <device mac="18:46:17:E7:33:CA">
+        <owner>Shriram</owner>
+        <make>Samsung</make>
+        <model>Galaxy Tab</model>
+    </device>
+    <device mac="2C:D2:E7:95:80:74">
+        <owner>Srinivas</owner>
+        <make>Nokia</make>
+        <model>Nokia N8</model>
+    </device>
+    <device mac="38:AA:3C:84:94:A0">
+        <owner>Srinivas</owner>
+        <make>Samsung</make>
+        <model>Samsung S3</model>
+    </device>
+    <device mac="20:7C:8F:77:48:0C">
+        <owner>Srinivas</owner>
+        <make>Acer</make>
+        <model>Acer Laptop</model>
+    </device>
+</data>
