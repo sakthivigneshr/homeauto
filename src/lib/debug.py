@@ -15,7 +15,7 @@ INFO  = 3
 TRACE = 4
 
 # Global debug level
-debug = INFO
+debug = TRACE
 
 # Log file name
 log_file = '/tmp/homeauto.log'

@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import paho.mqtt.client as mqtt
 
-OUTPUT_PIN = 18
+OUTPUT_PIN = 7
 
 def on_message(mqttc, app_data, msg):
 	level = int(msg.payload)

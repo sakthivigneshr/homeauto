@@ -23,7 +23,15 @@ def debug_print(level, s):
 def turn_on_lights_if_needed(db):
 	# Turn on lights if its above 5pm
 	hour = int(time.strftime('%H'))
-	if (hour >= 17):
+	month = int(time.strftime('%m'))
+
+	#Daylight saving March to November
+	if (month < 3 or month >= 11):
+		cutoff = 17
+	else:
+		cutoff = 19
+
+	if (hour >= cutoff):
 		debug_print(debug.INFO, 'Turning on light - welcome back')
 		cur = db.cursor()
 		cur.execute("UPDATE pinStatus SET pinStatus='1' WHERE " +
@@ -39,9 +47,10 @@ def turn_on_lights_if_needed(db):
 # off.
 #
 def turn_off_lights_if_needed(db):
-	# Turn off lights between 1am and 4pm
+	# Turn off lights anytime not within 4pm-11:30pm
 	hour = int(time.strftime('%H'))
-	if (hour >= 1 and hour <= 16):
+	minute = int(time.strftime('%M'))
+	if (hour <= 16 or hour > 23 or (hour == 23 and minute >= 30)):
 		debug_print(debug.INFO, 'Turning off light - time ' + repr(hour) +
 				' (good night)')
 		cur = db.cursor()
