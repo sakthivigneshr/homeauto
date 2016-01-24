@@ -159,6 +159,13 @@ class main():
 	global debugCount
 	debugCount = 0
 
+	# Activate auto turn off scanner
+	debug_print(debug.INFO, ' starting auto turn off scan')
+	while (1):
+		sleep 60
+		turn_off_lights_if_needed(app_data.db)
+	debug_print(debug.ERROR, ' auto turn off scan exited!')
+
 	mqttc.loop_forever()
 
 # This prevents main from executing if this is being imported as a module #
