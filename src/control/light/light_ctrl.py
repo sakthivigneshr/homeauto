@@ -47,10 +47,10 @@ def turn_on_lights_if_needed(db):
 # off.
 #
 def turn_off_lights_if_needed(db):
-	# Turn off lights anytime not within 4pm-11:30pm
+	# Turn off lights anytime not within 4pm-12:30am
 	hour = int(time.strftime('%H'))
 	minute = int(time.strftime('%M'))
-	if (hour <= 16 or hour > 23 or (hour == 23 and minute >= 30)):
+	if ((hour > 0 and hour <= 16) or (hour == 0 and minute >= 30)):
 		debug_print(debug.INFO, 'Turning off light - time ' + repr(hour) +
 				' (good night)')
 		cur = db.cursor()
