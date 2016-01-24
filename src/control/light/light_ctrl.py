@@ -162,7 +162,7 @@ class main():
 	# Activate auto turn off scanner
 	debug_print(debug.INFO, ' starting auto turn off scan')
 	while (1):
-		sleep 60
+		time.sleep(60)
 		turn_off_lights_if_needed(app_data.db)
 	debug_print(debug.ERROR, ' auto turn off scan exited!')
 
