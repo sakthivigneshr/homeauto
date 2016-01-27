@@ -8,10 +8,6 @@ from threading import Thread
 import paho.mqtt.client as mqtt
 import src.lib.debug as debug
 
-# Device to look for
-#device = '50:EA:D6:B6:F5:85'
-#device = '192.168.1.201'
-
 #
 # The debug function
 #
@@ -26,7 +22,7 @@ class DeviceDetectionForLight(Thread):
 		self.db = MySQLdb.connect(host="localhost", user="root",
 					passwd="vignesh2580", db="gpio")
 		self.mqttc = mqtt.Client()
-		self.mqttc.connect("127.0.0.1", 1883, 60)
+		self.mqttc.connect("mohawk.link", 1883, 60)
 		self.sleep_time = 5
 		self.device = '192.168.1.201'
 		self.lastseen  = 0

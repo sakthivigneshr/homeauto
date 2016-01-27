@@ -18,7 +18,7 @@ class main():
 	mqttc = mqtt.Client()
 	mqttc.on_message = on_message
 	mqttc.on_connect = on_connect
-	mqttc.connect("192.168.1.203", 1883, 60)
+	mqttc.connect("mohawk.link", 1883, 60)
 	mqttc.loop_forever()
 
 if __name__ == "__main__":
